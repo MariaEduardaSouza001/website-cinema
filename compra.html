@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemart</title>
+    <link rel="stylesheet" href="css/Styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper-bundle.min.css">
+    
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="Imagem/LOGO-C.png" alt="Logo" class="logo-img">
+            <span class="logo-text">INEMART</span>
+        </a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="index.html"> Início</a></li> <li><a href="catalogo.html"> Catálogos</a></li>
+            <li><a href="promocao.html" > Promoções</a></li>
+        </ul>
+        <a href="cadastro.html" class="btn"> Cadastra</a>
+    </header>
+
+    <main class="container-compra">
+        <section class="filme-detalhes">
+            
+            <img src="Imagem/Marvel.Capitão.webp" alt="Poster de Capitão Marvel">
+            <p>Selecione a data, horário e quantidade de ingressos desejada.</p>
+        </section>
+
+        <section class="formulario-compra">
+            <h3>Selecione os detalhes:</h3>
+            <form id="form-compra">
+                <div class="form-group">
+                    <label for="data">Data:</label>
+                    <select id="data" name="data">
+                        <option value="03-05-2025">03 de Maio de 2025</option>
+                        <option value="04-05-2025">04 de Maio de 2025</option>
+                        <option value="05-05-2025">05 de Maio de 2025</option>
+                        </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="horario">Horário:</label>
+                    <select id="horario" name="horario">
+                        <option value="12:40">12:40</option>
+                        <option value="13:40">13:40</option>
+                        <option value="15:40">15:40</option>
+                        <option value="16:30">16:30</option>
+                        </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="ingressos">Número de Ingressos:</label>
+                    <input type="number" id="ingressos" name="ingressos" min="1" value="1">
+                </div>
+
+                <button type="submit" class="btn-comprar">Continuar para o Pagamento</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        </footer>
+        <script src="js.js"></script>
+
+</body>
+</html>

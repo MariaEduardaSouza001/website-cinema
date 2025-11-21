@@ -1,0 +1,95 @@
+
+
+:root {
+    --main-color: #ff2c1f;
+    --text-color: #020307;
+}
+
+.body-login {
+    background-color: var(--text-color);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    color: white;
+    position: relative;
+    display: inline-block;
+}
+
+.login-container h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background-color: var(--main-color);
+}
+
+.login-container input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.login-container input:focus {
+    border-color: var(--main-color);
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo um pouco mais claro ao focar */
+}
+
+.login-container button {
+    background-color: var(--main-color);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 95%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.login-container button:hover {
+    background-color: darkred;
+}
+
+.login-container p {
+    margin-top: 15px;
+    color: white;
+}
+
+.login-container a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}

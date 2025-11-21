@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Cinemart</title>
+    <link rel="stylesheet" href="css/Styles.css">
+    <script src="js/Script.js" defer></script>
+</head>
+<body class="body-cadastro">
+    <div class="cadastro-container">
+        <h1>Cadastro</h1>
+        <form id="formularioCadastro">
+            <div>
+                <input type="text" id="nome" placeholder="Seu nome" required>
+            </div>
+            <div>
+                <input type="email" id="email" placeholder="Seu email" required>
+            </div>
+            <div>
+                <input type="text" id="cep" placeholder="Digite seu CEP" onblur="buscarEndereco(this.value)" required>
+            </div>
+            <div>
+                <input type="password" id="senha" placeholder="Senha" required>
+            </div>
+
+            <div class="captcha-container">
+                <label for="captchaInput">Digite o texto abaixo:</label>
+                <span id="captchaTexto" class="captcha-texto"></span>
+                <input type="text" id="captchaInput" placeholder="Digite o CAPTCHA" required>
+                <p id="erroCaptcha" class="erro-mensagem"></p>
+                <button type="button" onclick="carregarCaptcha()">Gerar Novo CAPTCHA</button>
+            </div>
+
+            <button type="submit" class="btn">Cadastrar</button>
+            <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,5 +1,5 @@
 # Website Cineart
-Projeto frontedn para desenvolver um website de cinema
+Projeto frontend para desenvolver um website de cinema
 
 ## Requisitos funcionais
 - Homepage
